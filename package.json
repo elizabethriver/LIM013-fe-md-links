@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/elizabethriver/LIM013-fe-md-links/issues"
   },
-  "homepage": "https://github.com/elizabethriver/LIM013-fe-md-links#readme"
+  "homepage": "https://github.com/elizabethriver/LIM013-fe-md-links#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
