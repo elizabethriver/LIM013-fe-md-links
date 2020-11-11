@@ -1,7 +1,7 @@
 {
   "name": "mdlinks-eru",
   "version": "1.0.0",
-  "description": "esto es un paquete de md-links",
+  "description": "esto es una libreria de md-links",
   "main": "index.js",
   "directories": {
     "test": "test"
