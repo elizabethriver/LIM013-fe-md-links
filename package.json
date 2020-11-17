@@ -2,11 +2,12 @@
   "name": "mdlinks-eru",
   "version": "1.0.0",
   "description": "esto es una libreria de md-links",
-  "main": "index.js",
+  "main": "./lib/md-links.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "start": "node ./lib/md-links.js",
     "test": "jest --coverage"
   },
   "repository": {
