@@ -1,11 +1,19 @@
 {
-  "name": "mdlinks-eru",
+  "name": "md-links-eru",
   "version": "1.0.0",
   "description": "esto es una libreria de md-links",
   "main": "./lib/md-links.js",
   "directories": {
     "test": "test"
   },
+  "bin" : { 
+    "md-links" : "./lib/cli.js" 
+  }, 
+  "keywords": [
+    "links",
+    "npm",
+    "markdown"
+  ],
   "scripts": {
     "start": "node ./lib/md-links.js",
     "test": "jest --coverage"
@@ -14,7 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/elizabethriver/LIM013-fe-md-links.git"
   },
-  "author": "elizabeth rivera",
+  "author": {
+    "name": "elizabeth rivera",
+    "email": "elizabethriver@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/elizabethriver/LIM013-fe-md-links/issues"

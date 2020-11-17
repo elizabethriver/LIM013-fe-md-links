@@ -1,13 +1,16 @@
 module.exports = {
     "env": {
-        "browser": true,
+        "node": true,
         "commonjs": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
-    "extends": "eslint:recommended",
+    "extends": "airbnb-base",
     "parserOptions": {
         "ecmaVersion": 12
     },
     "rules": {
-    }
+        "no-console": "warn"
+    },
+    "plugins": ["jest"]
 };
