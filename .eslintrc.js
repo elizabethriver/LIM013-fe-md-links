@@ -5,12 +5,17 @@ module.exports = {
         "es2021": true,
         "jest": true
     },
-    "extends": "airbnb-base",
+    "extends": ["airbnb-base"],
     "parserOptions": {
         "ecmaVersion": 12
     },
     "rules": {
-        "no-console": "warn"
+        "no-console": "warn",
+        "linebreak-style": 0,
     },
+    "globals": {
+        'Atomics': "readonly",
+        'SharedArrayBuffer': "readonly",
+      },
     "plugins": ["jest"]
 };

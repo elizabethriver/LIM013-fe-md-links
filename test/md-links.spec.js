@@ -1,10 +1,8 @@
-// const mdLinks = require('../');
+const init = require('../lib/cli.js');
 
+describe('hola mundo que tal, hoy es un dia feliz', () => {
+  it('Must be a function', () => {
+    expect(typeof init).toBe('function');
+  }) 
+});
 
-// describe('mdLinks', () => {
-
-//   it('should...', () => {
-//     console.log('FIX ME!');
-//   });
-
-// });

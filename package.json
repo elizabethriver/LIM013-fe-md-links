@@ -6,9 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "bin" : { 
-    "md-links" : "./lib/cli.js" 
-  }, 
+  "bin": {
+    "md-links": "./lib/cli.js"
+  },
   "keywords": [
     "links",
     "npm",
@@ -40,7 +40,8 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "chalk": "^4.1.0",
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2",
     "colors": "^1.4.0",
     "commander": "^6.2.0",
     "marked": "^1.2.3",
