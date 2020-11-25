@@ -1,0 +1,50 @@
+{
+  "name": "md-links-eru",
+  "version": "1.0.0",
+  "description": "esto es una libreria de md-links",
+  "main": "./lib/md-links.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "md-links": "./lib/cli.js"
+  },
+  "keywords": [
+    "links",
+    "npm",
+    "markdown"
+  ],
+  "scripts": {
+    "start": "node ./lib/md-links.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizabethriver/LIM013-fe-md-links.git"
+  },
+  "author": {
+    "name": "elizabeth rivera",
+    "email": "elizabethriver@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizabethriver/LIM013-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/elizabethriver/LIM013-fe-md-links#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2",
+    "colors": "^1.4.0",
+    "commander": "^6.2.0",
+    "marked": "^1.2.3",
+    "node-fetch": "^2.6.1"
+  }
+}
