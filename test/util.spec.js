@@ -1,7 +1,7 @@
 const {pathisAbsolute, validationPath, pathBecameAbsolute} = require('../lib/util.js')
 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
-const relaPath = '../test/example/texto.tx';
+const relaPath = './test/example/texto.tx';
 const convertAbsPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\texto.tx';
 const fakePath = '../test/example/texto.js';
 
