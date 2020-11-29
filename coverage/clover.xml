@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1606441516360" clover="3.2.0">
-  <project timestamp="1606441516360" name="All files">
-    <metrics statements="37" coveredstatements="15" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="3" elements="53" coveredelements="18" complexity="0" loc="37" ncloc="37" packages="1" files="2" classes="2"/>
+<coverage generated="1606599690089" clover="3.2.0">
+  <project timestamp="1606599690089" name="All files">
+    <metrics statements="47" coveredstatements="19" conditionals="10" coveredconditionals="0" methods="11" coveredmethods="4" elements="68" coveredelements="23" complexity="0" loc="47" ncloc="47" packages="1" files="2" classes="2"/>
     <file name="md-links.js" path="C:\Users\ELIZABETH\Documents\Laboratoria\LIM013-fe-md-links\lib\md-links.js">
       <metrics statements="9" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <line num="2" count="1" type="stmt"/>
@@ -15,7 +15,7 @@
       <line num="21" count="1" type="stmt"/>
     </file>
     <file name="util.js" path="C:\Users\ELIZABETH\Documents\Laboratoria\LIM013-fe-md-links\lib\util.js">
-      <metrics statements="28" coveredstatements="11" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="3"/>
+      <metrics statements="38" coveredstatements="15" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="4"/>
       <line num="2" count="2" type="stmt"/>
       <line num="3" count="2" type="stmt"/>
       <line num="5" count="2" type="stmt"/>
@@ -23,27 +23,37 @@
       <line num="11" count="2" type="stmt"/>
       <line num="13" count="2" type="stmt"/>
       <line num="15" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="27" count="0" type="stmt"/>
-      <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="44" count="2" type="stmt"/>
-      <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="46" count="0" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="6" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="47" count="2" type="stmt"/>
       <line num="48" count="0" type="stmt"/>
-      <line num="49" count="0" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
+      <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="50" count="0" type="stmt"/>
+      <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="53" count="0" type="stmt"/>
       <line num="54" count="0" type="stmt"/>
-      <line num="59" count="2" type="stmt"/>
-      <line num="60" count="0" type="stmt"/>
-      <line num="61" count="0" type="stmt"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="61" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="62" count="0" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="64" count="0" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
       <line num="68" count="0" type="stmt"/>
       <line num="69" count="0" type="stmt"/>
-      <line num="72" count="2" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="75" count="2" type="stmt"/>
+      <line num="76" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="84" count="0" type="stmt"/>
+      <line num="85" count="0" type="stmt"/>
+      <line num="88" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
