@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1606949530766" clover="3.2.0">
-  <project timestamp="1606949530768" name="All files">
-    <metrics statements="60" coveredstatements="55" conditionals="14" coveredconditionals="12" methods="16" coveredmethods="14" elements="90" coveredelements="81" complexity="0" loc="60" ncloc="60" packages="1" files="2" classes="2"/>
+<coverage generated="1606950576435" clover="3.2.0">
+  <project timestamp="1606950576436" name="All files">
+    <metrics statements="59" coveredstatements="54" conditionals="14" coveredconditionals="12" methods="16" coveredmethods="14" elements="89" coveredelements="80" complexity="0" loc="59" ncloc="59" packages="1" files="2" classes="2"/>
     <file name="md-links.js" path="C:\Users\ELIZABETH\Documents\Laboratoria\LIM013-fe-md-links\lib\md-links.js">
       <metrics statements="9" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <line num="2" count="1" type="stmt"/>
@@ -15,7 +15,7 @@
       <line num="21" count="1" type="stmt"/>
     </file>
     <file name="util.js" path="C:\Users\ELIZABETH\Documents\Laboratoria\LIM013-fe-md-links\lib\util.js">
-      <metrics statements="51" coveredstatements="51" conditionals="12" coveredconditionals="12" methods="14" coveredmethods="14"/>
+      <metrics statements="50" coveredstatements="50" conditionals="12" coveredconditionals="12" methods="14" coveredmethods="14"/>
       <line num="3" count="2" type="stmt"/>
       <line num="5" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>
@@ -61,12 +61,11 @@
       <line num="89" count="1" type="stmt"/>
       <line num="90" count="1" type="stmt"/>
       <line num="91" count="1" type="stmt"/>
-      <line num="92" count="1" type="stmt"/>
       <line num="94" count="1" type="stmt"/>
       <line num="95" count="1" type="stmt"/>
-      <line num="96" count="1" type="stmt"/>
       <line num="98" count="2" type="stmt"/>
-      <line num="102" count="2" type="stmt"/>
+      <line num="99" count="2" type="stmt"/>
+      <line num="103" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
