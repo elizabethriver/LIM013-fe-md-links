@@ -1,4 +1,4 @@
-const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile} = require('../lib/util.js')
+const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory} = require('../lib/util.js')
 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
 const relaPath = './test/example/texto.tx';
@@ -10,6 +10,13 @@ const arrayFileMD = ['test\\example\\wiki.md'];
 const fileMdTest = './test/example/wiki.md';
 const arrayEmpty = [];
 const textFile = '[wiki](https://es.wikipedia.org/wiki/Wikipedia:Portada)';
+const arrayMds =   [
+  'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\mdv.md',
+  'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
+]
+const arrayMdFile = [
+  'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
+]
 
 //TODO revisar 
 describe('pathBecameAbsolute', () => {
@@ -104,10 +111,41 @@ describe('pathisAbsolute', () => {
     });
   });
   describe('readFile', () => {
-    it('stats es una función', () => {
+    it('readFile es una función', () => {
       expect(typeof readFile).toBe('function');
     });
     it('Devuelve texto de un file', () => {
       expect(readFile(fileMdTest)).toEqual(textFile);
+    });
+  });
+  describe('getAllFiles', () => {
+    it('getAllFiles es una función', () => {
+      expect(typeof getAllFiles).toBe('function');
+    });
+    it('Devuelve un array', () => {
+      expect(getAllFiles(directpath)).toEqual(arrayMds);
+    });
+  });
+  describe('pathAbsolute', () => {
+    it('pathAbsolute es una función', () => {
+      expect(typeof pathAbsolute).toBe('function');
+    });
+    it('Devuelve un path absoluto de un path absoluto', () => {
+      expect(pathAbsolute(absPath)).toEqual(absPath);
+    });
+    it('Devuelve un path relativo de un path absoluto', () => {
+      expect(pathAbsolute(fileMdTest)).toEqual(absPath);
+    });
+  });
+
+  describe('isFileOrDiectory', () => {
+    it('isFileOrDiectory es una función', () => {
+      expect(typeof isFileOrDiectory).toBe('function');
+    });
+    it('Devuelve texto de un file', () => {
+      expect(isFileOrDiectory(directpath)).toEqual(arrayMds);
+    });
+    it('Devuelve texto de un file', () => {
+      expect(isFileOrDiectory(absPath)).toEqual(arrayMdFile);
     });
   });
