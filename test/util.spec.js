@@ -1,5 +1,6 @@
 const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory} = require('../lib/util.js')
 
+//TODO paths 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
 const relaPath = './test/example/texto.tx';
 const convertAbsPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\texto.tx';
@@ -18,7 +19,7 @@ const arrayMdFile = [
   'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
 ]
 
-//TODO revisar 
+//TODO pathBecameAbsolute 
 describe('pathBecameAbsolute', () => {
     it('pathBecameAbsolute es una función', () => {
       expect(typeof pathBecameAbsolute).toBe('function');
@@ -27,7 +28,7 @@ describe('pathBecameAbsolute', () => {
       expect(pathBecameAbsolute(relaPath)).toEqual(convertAbsPath);
     });
   });
-
+//TODO validationPath 
 describe('validationPath', () => {
     it('validationPath es una función', () => {
       expect(typeof validationPath).toBe('function');
@@ -39,7 +40,7 @@ describe('validationPath', () => {
       expect(validationPath(fakePath)).toEqual(false);
     });
   });
-
+//TODO pathisAbsolute 
 describe('pathisAbsolute', () => {
     it('pathisAbsolute es una función', () => {
       expect(typeof pathisAbsolute).toBe('function');
@@ -51,7 +52,7 @@ describe('pathisAbsolute', () => {
       expect(pathisAbsolute(relaPath)).toEqual(false);
     });
   });
-
+//TODO files 
   describe('files', () => {
     it('files es una función', () => {
       expect(typeof files).toBe('function');
@@ -60,7 +61,7 @@ describe('pathisAbsolute', () => {
       expect(files(directpath)).toEqual(filesReaded);
     });
   });
-
+  //TODO extname 
   describe('extname', () => {
     it('extname es una función', () => {
       expect(typeof extname).toBe('function');
@@ -69,7 +70,7 @@ describe('pathisAbsolute', () => {
       expect(extname(fakePath)).toEqual('.js');
     });
   });
-
+  //TODO isDirectory 
   describe('isDirectory', () => {
     it('isDirectory es una función', () => {
       expect(typeof isDirectory).toBe('function');
@@ -81,7 +82,7 @@ describe('pathisAbsolute', () => {
       expect(isDirectory(absPath)).toEqual(false);
     });
   });
-
+ //TODO isFile
   describe('isFile', () => {
     it('isFile es una función', () => {
       expect(typeof isFile).toBe('function');
@@ -93,7 +94,7 @@ describe('pathisAbsolute', () => {
       expect(isFile(directpath)).toEqual(false);
     });
   });
-
+//TODO fileMd
   describe('fileMd', () => {
     it('fileMd es una función', () => {
       expect(typeof fileMd).toBe('function');
@@ -105,11 +106,13 @@ describe('pathisAbsolute', () => {
       expect(fileMd(relaPath)).toEqual(arrayEmpty);
     });
   });
+  //TODO stats
   describe('stats', () => {
     it('stats es una función', () => {
       expect(typeof stats).toBe('function');
     });
   });
+  //TODO readFile
   describe('readFile', () => {
     it('readFile es una función', () => {
       expect(typeof readFile).toBe('function');
@@ -118,6 +121,7 @@ describe('pathisAbsolute', () => {
       expect(readFile(fileMdTest)).toEqual(textFile);
     });
   });
+  //TODO getAllFiles
   describe('getAllFiles', () => {
     it('getAllFiles es una función', () => {
       expect(typeof getAllFiles).toBe('function');
@@ -126,6 +130,7 @@ describe('pathisAbsolute', () => {
       expect(getAllFiles(directpath)).toEqual(arrayMds);
     });
   });
+  //TODO pathAbsolute
   describe('pathAbsolute', () => {
     it('pathAbsolute es una función', () => {
       expect(typeof pathAbsolute).toBe('function');
@@ -137,7 +142,7 @@ describe('pathisAbsolute', () => {
       expect(pathAbsolute(fileMdTest)).toEqual(absPath);
     });
   });
-
+  //TODO isFileOrDiectory
   describe('isFileOrDiectory', () => {
     it('isFileOrDiectory es una función', () => {
       expect(typeof isFileOrDiectory).toBe('function');
