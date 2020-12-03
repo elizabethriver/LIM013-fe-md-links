@@ -1,4 +1,4 @@
-const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory} = require('../lib/util.js')
+const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory, extractLinks} = require('../lib/util.js')
 
 //TODO paths 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
@@ -12,6 +12,7 @@ const fileMdTest = './test/example/wiki.md';
 const arrayEmpty = [];
 const textFile = '[wiki](https://es.wikipedia.org/wiki/Wikipedia:Portada)';
 const arrayMds =   [
+  "C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\error.md",
   'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\mdv.md',
   'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
 ]
@@ -149,6 +150,15 @@ describe('pathisAbsolute', () => {
     });
     it('Devuelve texto de un file', () => {
       expect(isFileOrDiectory(directpath)).toEqual(arrayMds);
+    });
+    it('Devuelve texto de un file', () => {
+      expect(isFileOrDiectory(absPath)).toEqual(arrayMdFile);
+    });
+  });
+  //TODO extractLinks
+  describe('extractLinks', () => {
+    it('extractLinks es una función', () => {
+      expect(typeof extractLinks).toBe('function');
     });
     it('Devuelve texto de un file', () => {
       expect(isFileOrDiectory(absPath)).toEqual(arrayMdFile);
