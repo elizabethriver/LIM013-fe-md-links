@@ -20,6 +20,18 @@ const arrayMdFile = [
   'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
 ]
 
+const arrayLinks = 
+[ { href: 'https://marked.js.org/using_pro#rendererd', title: null,
+    text: 'marked'
+  },
+  { href: 'https://medium.com/', title: null, text: 'medium' },
+  {
+    href: 'https://es.wikipedia.org/wiki/Wikipedia:Portada',
+    title: null,
+    text: 'wiki'
+  }
+]
+
 //TODO pathBecameAbsolute 
 describe('pathBecameAbsolute', () => {
     it('pathBecameAbsolute es una función', () => {
@@ -161,6 +173,6 @@ describe('pathisAbsolute', () => {
       expect(typeof extractLinks).toBe('function');
     });
     it('Devuelve texto de un file', () => {
-      expect(isFileOrDiectory(absPath)).toEqual(arrayMdFile);
+      expect(extractLinks(directpath)).toEqual(arrayLinks);
     });
   });
