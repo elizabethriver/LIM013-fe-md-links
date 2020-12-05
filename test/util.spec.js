@@ -21,14 +21,21 @@ const arrayMdFile = [
 ]
 
 const arrayLinks = 
-[ { href: 'https://marked.js.org/using_pro#rendererd', title: null,
-    text: 'marked'
+[
+  {
+    href: 'https://marked.js.org/using_pro#rendererd',
+    text: 'marked',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
   },
-  { href: 'https://medium.com/', title: null, text: 'medium' },
+  {
+    href: 'https://medium.com/',
+    text: 'medium',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
+  },
   {
     href: 'https://es.wikipedia.org/wiki/Wikipedia:Portada',
-    title: null,
-    text: 'wiki'
+    text: 'wiki',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
   }
 ]
 
