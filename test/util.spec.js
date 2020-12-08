@@ -1,4 +1,4 @@
-const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory, extractLinks} = require('../lib/util.js')
+const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory, extractLinks, validateLinks } = require('../lib/util.js')
 
 //TODO paths 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
@@ -23,19 +23,43 @@ const arrayMdFile = [
 const arrayLinks = 
 [
   {
-    href: 'https://marked.js.org/using_pro#rendererd',
+    href: 'https://mard.js.org/using_pro#rendererd',
     text: 'marked',
-    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\error.md'
   },
   {
     href: 'https://medium.com/',
     text: 'medium',
-    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\mdv.md'
   },
   {
     href: 'https://es.wikipedia.org/wiki/Wikipedia:Portada',
     text: 'wiki',
-    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test'
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md'
+  }
+]
+
+const arryLinks = [
+  {
+    href: 'https://mard.js.org/using_pro#rendererd',
+    text: 'marked',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\error.md',
+    status: 400,
+    statusText: 'Fail'
+  },
+  {
+    href: 'https://es.wikipedia.org/wiki/Wikipedia:Portada',
+    text: 'wiki',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md',
+    status: 200,
+    statusText: 'OK'
+  },
+  {
+    href: 'https://medium.com/',
+    text: 'medium',
+    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\mdv.md',
+    status: 200,
+    statusText: 'OK'
   }
 ]
 
@@ -167,10 +191,10 @@ describe('pathisAbsolute', () => {
     it('isFileOrDiectory es una función', () => {
       expect(typeof isFileOrDiectory).toBe('function');
     });
-    it('Devuelve texto de un file', () => {
+    it('Devuelve array de Directory', () => {
       expect(isFileOrDiectory(directpath)).toEqual(arrayMds);
     });
-    it('Devuelve texto de un file', () => {
+    it('Devuelve array de file', () => {
       expect(isFileOrDiectory(absPath)).toEqual(arrayMdFile);
     });
   });
@@ -179,7 +203,16 @@ describe('pathisAbsolute', () => {
     it('extractLinks es una función', () => {
       expect(typeof extractLinks).toBe('function');
     });
-    it('Devuelve texto de un file', () => {
+    it('Devuelve un array de Links', () => {
       expect(extractLinks(directpath)).toEqual(arrayLinks);
     });
   });
+  //TODO validateLinks
+  describe('validateLinks', () => {
+    it('validateLinks es una función', () => {
+      expect(typeof validateLinks).toBe('function');
+    }); 
+  });
+  // test('the data is peanut butter', () => {
+  //   return expect(validateLinks(directpath)).resolves.toBe(arryLinks);
+  // });
