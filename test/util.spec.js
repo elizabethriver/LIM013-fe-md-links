@@ -2,6 +2,7 @@ const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname
 
 //TODO paths 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
+const mdPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\error.md';
 const relaPath = './test/example/texto.tx';
 const convertAbsPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\texto.tx';
 const fakePath = '../test/example/texto.js';
@@ -39,29 +40,28 @@ const arrayLinks =
   }
 ]
 
-const arryLinks = [
+const arryFailLinks = 
+[
   {
     href: 'https://mard.js.org/using_pro#rendererd',
     text: 'marked',
     path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\error.md',
     status: 400,
     statusText: 'Fail'
-  },
+  }
+]
+
+const arrayOkLinkMd = 
+[
   {
     href: 'https://es.wikipedia.org/wiki/Wikipedia:Portada',
     text: 'wiki',
     path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md',
     status: 200,
     statusText: 'OK'
-  },
-  {
-    href: 'https://medium.com/',
-    text: 'medium',
-    path: 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\example1\\mdv.md',
-    status: 200,
-    statusText: 'OK'
   }
 ]
+
 
 //TODO pathBecameAbsolute 
 describe('pathBecameAbsolute', () => {
@@ -211,8 +211,21 @@ describe('pathisAbsolute', () => {
   describe('validateLinks', () => {
     it('validateLinks es una función', () => {
       expect(typeof validateLinks).toBe('function');
-    }); 
+    });
+    it('Links validados ok', done => {
+      return validateLinks(mdPath).then(data => {
+        expect(data).toStrictEqual(arryFailLinks);
+        done();
+      });
+    });
+    // it('Links validados not ok', done => {
+    //   expect.assertions(1);
+    //   done();
+    //   return validateLinks(mdPath).catch(e => expect(e).toMatch(arrayOkLinkMd));
+     
+    // });
   });
-  // test('the data is peanut butter', () => {
-  //   return expect(validateLinks(directpath)).resolves.toBe(arryLinks);
-  // });
+
+
+
+
