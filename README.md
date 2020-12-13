@@ -69,6 +69,11 @@ Instalar la libreria via npm install --global elizabethriver/md-links-eru
 ```sh
 $ npm install --global elizabethriver/md-links-eru
 ```
+Instalar la libreria via npm install --i md-links-eru
+```sh
+$ npm install --i md-links-eru
+```
+
 Install from require 
 ![5](https://user-images.githubusercontent.com/63525613/102025737-fff36880-3d67-11eb-854a-400e82174381.png)
 
