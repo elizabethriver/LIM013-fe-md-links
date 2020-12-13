@@ -29,38 +29,48 @@ Next, present to you the backlog board of the library
 
 | Local dependencies | Description |
 | ------ | ------ |
-| Axios | [Promise based HTTP client for the browser and node.js][PlDb] |
-| Boxen | [Create boxes in the terminal][PlGh] |
-| Chalk | [Terminal string styling done right][PlGd] |
-| Marked | [Low-level compiler for parsing markdown without caching or blocking for long periods of time][PlOd] |
+| Axios | Promise based HTTP client for the browser and node.js |
+| Boxen | Create boxes in the terminal|
+| Chalk | Terminal string styling done right |
+| Marked | Low-level compiler for parsing markdown without caching or blocking for long periods of time |
 
 | Global dependencies | Description |
 | ------ | ------ |
-| Axios | [Promise based HTTP client for the browser and node.js][PlDb] |
-| Boxen | [Create boxes in the terminal][PlGh] |
-| Chalk | [Terminal string styling done right][PlGd] |
-| Marked | [Low-level compiler for parsing markdown without caching or blocking for long periods of time][PlOd] |
+| eslint |Airbnb's ESLint config, following our styleguide |
+| jest | Delightful JavaScript Testing|
+| nodemon | Simple monitor script for use during development of a node.js app. |
+
+| Modulos | Description |
+| ------ | ------ |
+| fs | The fs module enables interacting with the file system in a way modeled on standard POSIX functions. |
+| path | The path module provides utilities for working with file and directory paths|
+| process | The process object is a global that provides information about, and control over, the current Node.js process |
 
 ### Boiletplate :triangular_ruler:
-.
-├── lib
-|  ├── cli.js
-|  ├── mdLinks.js
-|  ├── stats.js
-|  ├── stas.js
-|  |── style.js
-|  └── util.js
-└── test
-   ├── utils.spec.js
-   └── mdLinks.spec.js
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── README.md
 
+![Imagen sin título](https://user-images.githubusercontent.com/63525613/102025543-b1919a00-3d66-11eb-8d8e-22c58edaced5.png)
+
+### Phases :triangular_ruler:
+1. md-links --help
+![help](https://user-images.githubusercontent.com/63525613/102025618-3aa8d100-3d67-11eb-9bb3-4ed146553d29.png)
+
+2. md-links path 
+![1](https://user-images.githubusercontent.com/63525613/102025644-63c96180-3d67-11eb-86d0-10ac9b6f3793.png)
+
+3. md-links path --validate
+![3](https://user-images.githubusercontent.com/63525613/102025699-c4589e80-3d67-11eb-8adf-e81d551e8320.png)
+
+3. md-links path --stats --validate
+![4](https://user-images.githubusercontent.com/63525613/102025701-c6226200-3d67-11eb-805e-bcd0b707b117.png)
 
 ## 4. Installation Guide :construction_worker:
+
 Instalar la libreria via npm install --global elizabethriver/md-links-eru
+```sh
+$ npm install --global elizabethriver/md-links-eru
+```
+Install from require 
+![5](https://user-images.githubusercontent.com/63525613/102025737-fff36880-3d67-11eb-854a-400e82174381.png)
 
 
 
