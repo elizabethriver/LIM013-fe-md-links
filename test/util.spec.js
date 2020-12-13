@@ -1,4 +1,6 @@
-const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory, extractLinks, validateLinks } = require('../lib/util.js')
+const axios = require('../_mocks_/axios.js');
+
+const {validationPath, pathisAbsolute, pathBecameAbsolute, files, stats, extname, isDirectory, isFile, fileMd, pathAbsolute, readFile, getAllFiles, isFileOrDiectory, extractLinks, validateLinks } = require('../lib/util.js');
 
 //TODO paths 
 const absPath = 'C:\\Users\\ELIZABETH\\Documents\\Laboratoria\\LIM013-fe-md-links\\test\\example\\wiki.md';
@@ -208,23 +210,44 @@ describe('pathisAbsolute', () => {
     });
   });
   //TODO validateLinks
+  // describe('validateLinks', () => {
+  //   it('validateLinks es una función', () => {
+  //     expect(typeof validateLinks).toBe('function');
+  //   });
+  //   it('Links validados ok', done => {
+  //     return validateLinks(mdPath).then(data => {
+  //       expect(data).toStrictEqual(arryFailLinks);
+  //       done();
+  //     });
+  //   });
+  //   // it('Links validados not ok', done => {
+  //   //   expect.assertions(1);
+  //   //   done();
+  //   //   return validateLinks(mdPath).catch(e => expect(e).toMatch(arrayOkLinkMd));
+     
+  //   // });
+  // });
+
   describe('validateLinks', () => {
     it('validateLinks es una función', () => {
       expect(typeof validateLinks).toBe('function');
     });
-    it('Links validados ok', done => {
-      return validateLinks(mdPath).then(data => {
+    // it('Links validados ok', (done) => {
+    //   axios.get.mockImplementationOnce(() => Promise.resolve({ status: 200, statusText: 'OK' }));
+    //   validateLinks(absPath).then((data) => {
+    //   expect(data).toStrictEqual(arrayOkLinkMd);
+    //   done();
+    //   });
+    // });
+    it('Links validados fail', (done) => {
+      axios.get.mockImplementationOnce(() => Promise.reject(error('error')));
+      validateLinks(mdPath).then((data) => {
         expect(data).toStrictEqual(arryFailLinks);
         done();
-      });
+        });
     });
-    // it('Links validados not ok', done => {
-    //   expect.assertions(1);
-    //   done();
-    //   return validateLinks(mdPath).catch(e => expect(e).toMatch(arrayOkLinkMd));
-     
-    // });
   });
+
 
 
 
