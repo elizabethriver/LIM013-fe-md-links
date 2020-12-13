@@ -1,6 +1,6 @@
 {
   "name": "md-links-eru",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "esto es una libreria de md-links",
   "main": "./lib/md-links.js",
   "directories": {
