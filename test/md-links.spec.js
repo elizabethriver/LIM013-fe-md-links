@@ -35,12 +35,12 @@ describe('esto retorna links validos', () => {
     done();
     });
   });
-  // it('Links validados ok', (done) => {
-  //   axios.get.mockImplementationOnce(() => Promise.resolve({ status: 200, statusText: 'OK' }));
-  //   mdlinks(absPath, { validate: true }).then((data) => {
-  //   expect(data).toStrictEqual(arrayOkLinkMd);
-  //   done();
-  //   });
-  // });
+  it('Links validados ok', (done) => {
+    axios.get.mockImplementationOnce(() => Promise.resolve({ status: 200, statusText: 'OK' }));
+    mdlinks(absPath, { validate: true }).then((data) => {
+    expect(data).toStrictEqual(arrayOkLinkMd);
+    done();
+    });
+  });
 });
 

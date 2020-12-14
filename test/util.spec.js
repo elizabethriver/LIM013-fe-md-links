@@ -221,6 +221,13 @@ describe('pathisAbsolute', () => {
         done();
         });
     });
+    it('Links validados ok', (done) => {
+      axios.get.mockImplementationOnce(() => Promise.resolve({ status: 200, statusText: 'OK' }));
+      validateLinks(absPath).then((data) => {
+      expect(data).toStrictEqual(arrayOkLinkMd);
+      done();
+      });
+    });
   });
 
 

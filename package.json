@@ -6,7 +6,6 @@
   "directories": {
     "test": "test"
   },
-  
   "bin": {
     "md-links": "./lib/cli.js"
   },
