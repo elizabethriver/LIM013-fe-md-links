@@ -75,7 +75,7 @@ $ npm install -i md-links-eru
 ```
 
 Install from require 
-![5](https://user-images.githubusercontent.com/63525613/102025737-fff36880-3d67-11eb-854a-400e82174381.png)
+![Imagen sin título](https://user-images.githubusercontent.com/63525613/102027955-98441a00-3d75-11eb-9d5a-6c4c1abb0ce3.png)
 
 
 
