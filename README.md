@@ -60,15 +60,15 @@ Next, present to you the backlog board of the library
 3. md-links path --validate
 ![Imagen sin título](https://user-images.githubusercontent.com/63525613/102029858-2f14d480-3d7e-11eb-8360-c0f82bd8b7d3.png)
 
-3. md-links path --stats 
+4. md-links path --stats 
 ![3](https://user-images.githubusercontent.com/63525613/102025699-c4589e80-3d67-11eb-8adf-e81d551e8320.png)
 
-3. md-links path --stats --validate
+5. md-links path --stats --validate
 ![4](https://user-images.githubusercontent.com/63525613/102025701-c6226200-3d67-11eb-805e-bcd0b707b117.png)
 
 ## 4. Installation Guide :construction_worker:
 
-Instalar la libreria via npm install --global elizabethriver/md-links-eru
+Instalar la libreria via npm install -global md-links-eru
 ```sh
 $ npm install -global md-links-eru
 ```
