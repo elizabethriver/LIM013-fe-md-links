@@ -68,7 +68,7 @@ Next, present to you the backlog board of the library
 
 ## 4. Installation Guide :construction_worker:
 
-Instalar la libreria via npm install --global elizabethriver/md-links-eru
+Instalar la libreria via npm install --global md-links-eru
 ```sh
 $ npm install -global md-links-eru
 ```
